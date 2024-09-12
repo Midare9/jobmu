@@ -20,7 +20,7 @@ export default async function Page() {
   return (
     <div className="grid grid-cols-2 p-6">
       <div className="mr-6 grid justify-end space-y-4">
-        {data.map((job) => {
+        {data?.map((job) => {
           return (
             <JobCard
               key={job._id}
